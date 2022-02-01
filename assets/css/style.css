@@ -384,12 +384,14 @@ h3 {
 .card li a {
   margin-right: 0;
   color: #333;
-  border-bottom: 2px solid #ffab40;
+  border-bottom: 2px solid #e38dd9;
+  text-decoration: underline;
 }
 
 .card li a:hover {
   color: #333;
   font-weight: 500;
+  text-decoration: underline;
 }
 
 .card .card-content {
@@ -439,6 +441,7 @@ h3 {
   line-height: 200%;
   list-style-type: disc;
   margin-left: 24px;
+  padding-bottom: 10px
 }
 
 .card ul li li {
