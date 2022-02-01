@@ -144,8 +144,12 @@ body {
 a {
   color: #000000;
   text-decoration: underline;
-  font-size: 12px;
-  background-color: cyan;
+}
+
+a:link {
+  color: #000000;
+  text-decoration: underline;
+  font-size: 12pz;
 }
 
 /* main blockqoute */
