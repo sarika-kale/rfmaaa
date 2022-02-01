@@ -28,15 +28,6 @@
   right: 0;
 }
 
-.rect-img-container {
-  position: relative;
-}
-
-.rect-img-container::after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-}
 
 .rect-img {
   position: absolute;
@@ -726,6 +717,6 @@ overflow: hidden;
     bottom:0px;
 }
 .member img {
-    width: auto;
+    width:20%;
     display: block;
 }
