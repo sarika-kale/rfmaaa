@@ -1,7 +1,7 @@
 .profile-pic {
   position: relative;
   max-width:130px;
-  max-height:180px;
+  max-height:130px;
   width: auto;
   height: auto;
   overflow: hidden;
@@ -9,7 +9,7 @@
   
   
   /* background-size: cover;  */
-  margin: -7px; 
+  margin: -25px; 
   margin-left:-7px;
 }
 
@@ -430,7 +430,7 @@ h3 {
 }
 
 .card ul {
-  margin-bottom: 0;
+  margin-bottom: 50px;
 }
 
 .card ul li {
@@ -449,7 +449,7 @@ h3 {
 }
 
 .card .card-content .card-title {
-  line-height: 2.5rem;
+  line-height: 5rem;
 }
 
 .card i.right {
@@ -487,7 +487,8 @@ a.hoverline:hover {
 #skills .col img.responsive-img {
   margin: 0 auto;
   max-height: 100px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   text-align: center;
   vertical-align: middle;
   display: table-cell;
