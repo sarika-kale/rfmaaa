@@ -512,7 +512,7 @@ a.hoverline:hover {
 
 #experience .card-content .row {
   border-bottom: 1px solid #ddd;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
 }
 
 .card.large .card-image {
@@ -577,7 +577,7 @@ small {
 
 @media (min-width: 1200px) {
   #experience .container {
-    width: 860px;
+    width: 1360px;
   }
 }
 
@@ -602,7 +602,7 @@ small {
   }
   ul.side-nav a {
     line-height: 100%;
-    padding: 0;
+    padding: 20 20 20 20;
     width: 100%;
   }
   nav {
