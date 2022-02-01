@@ -320,7 +320,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #14365d repeat;
+  background: #7d52c4 repeat;
   position: relative;
 }
 
@@ -356,7 +356,7 @@ h3 {
 }
 
 .overlay {
-  background-color: #14365d;
+  background-color: #7d52c4;
   height: 100%;
   left: 0;
   position: absolute;
@@ -552,7 +552,7 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  color: #4C4A48 !important;
+  color: #94ced3 !important;
 }
 
 /* .teal-text {
@@ -563,7 +563,7 @@ small {
 
 .teal {
   /* banner */
-  background-color: #3F3F3F !important;
+  background-color: #cd79f5 !important;
 }
 
 
