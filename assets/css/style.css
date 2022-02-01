@@ -602,7 +602,7 @@ small {
   }
   ul.side-nav a {
     line-height: 100%;
-    padding: 20 20 20 20;
+    padding: 0;
     width: 100%;
   }
   nav {
