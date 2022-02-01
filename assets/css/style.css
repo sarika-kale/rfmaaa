@@ -41,7 +41,7 @@
   width: 50px;
   height: 50px;
   border: 0;
-  color: #000000;
+  color: #199fb1;
   cursor: pointer;
   font-size: 30px;
   line-height: 70px;
@@ -51,11 +51,11 @@
 }
 
 .github {
-  color: #16123f;
+  color: black;
 }
 
 .linkedin {
-  color: #16123f;
+  color: #0077b5;
 }
 
 .angellist {
@@ -68,7 +68,7 @@
 }
 
 .linkedin:hover {
-  background-color: #0077b5;
+  background-color: #199fb1;
 }
 
 .angellist:hover {
@@ -76,7 +76,7 @@
 }
 
 .github:hover {
-  background-color: black;
+  background-color: #199fb1;
 }
 
 /* Buttons - Read Me, Contact Us */
@@ -84,8 +84,8 @@
 .readme {
   position: relative;
   padding: 11px 35px;
-  background: #fff;
-  color: #00796b;
+  background: #199fb1;
+  color: #a5d1e1;
   border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
@@ -96,7 +96,7 @@
 }
 
 /* .readme:hover{
-  color: #c7ddcc;
+  color: #a5d1e1;
   background-color: #75c9b7;
 } */
 
@@ -116,8 +116,8 @@
 }
 
 .contactme:hover{
-  color: #75c9b7;
-  background-color: #c7ddcc;
+  color: #199fb1;
+  background-color: #a5d1e1;
 }
 /* main body */
 
@@ -155,8 +155,8 @@ a {
 } */
 
 blockquote {
-  border-left: 1px solid #abd699;
-  color: #16123f;
+  border-left: 3px solid #abd699;
+  color: #199fb1;
   font-size: 105%;
   font-weight: 200;
   margin: 20px 20px;
@@ -356,7 +356,7 @@ h3 {
 }
 
 .overlay {
-  background-color: #7d52c4;
+  background-color: #0d5c75;
   height: 100%;
   left: 0;
   position: absolute;
@@ -384,12 +384,12 @@ h3 {
 .card li a {
   margin-right: 0;
   color: #333;
-  border-bottom: 2px solid #e38dd9;
+  border-bottom: 2px solid #199fb1;
   text-decoration: underline;
 }
 
 .card li a:hover {
-  color: #333;
+  color: #a5d1e1;
   font-weight: 500;
   text-decoration: underline;
 }
