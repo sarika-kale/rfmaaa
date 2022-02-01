@@ -1,7 +1,7 @@
 .profile-pic {
   position: relative;
   max-width:130px;
-  max-height:130px;
+  max-height:180px;
   width: auto;
   height: auto;
   overflow: hidden;
@@ -9,9 +9,8 @@
   
   
   /* background-size: cover;  */
-  margin: -31px; 
+  margin: -7px; 
   margin-left:-7px;
-  border: 6px solid #5B5EA6;
 }
 
 .profile-pic img {  
