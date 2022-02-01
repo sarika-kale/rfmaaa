@@ -499,7 +499,7 @@ a.hoverline:hover {
   margin: 0 auto;
   max-height: 100px;
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   text-align: center;
   vertical-align: middle;
   display: table-cell;
@@ -508,12 +508,12 @@ a.hoverline:hover {
 .card.large .card-content p {
   color: inherit;
   margin: 0;
-  padding: 30px 0;
+  padding: 60px 0;
 }
 
 #experience .card-content .row {
   border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .card.large .card-image {
@@ -701,7 +701,3 @@ small {
   #intro.section {
     background-position-x: 30%;
   }
-
-div.p {
-  font-size: 8px;
-}
