@@ -508,12 +508,12 @@ a.hoverline:hover {
 .card.large .card-content p {
   color: inherit;
   margin: 0;
-  padding: 60px 0;
+  padding: 30px 30px;
 }
 
 #experience .card-content .row {
   border-bottom: 1px solid #ddd;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 
 .card.large .card-image {
