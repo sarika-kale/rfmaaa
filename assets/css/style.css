@@ -41,7 +41,7 @@
   width: 50px;
   height: 50px;
   border: 0;
-  color: #199fb1;
+  color: #FFFFFF;
   cursor: pointer;
   font-size: 30px;
   line-height: 70px;
@@ -68,7 +68,7 @@
 }
 
 .linkedin:hover {
-  background-color: #199fb1;
+  background-color: #0077b5;
 }
 
 .angellist:hover {
@@ -76,7 +76,7 @@
 }
 
 .github:hover {
-  background-color: #199fb1;
+  background-color: black;
 }
 
 /* Buttons - Read Me, Contact Us */
@@ -84,8 +84,8 @@
 .readme {
   position: relative;
   padding: 11px 35px;
-  background: #199fb1;
-  color: #a5d1e1;
+  background: #fff;
+  color: #5B5EA6;
   border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
@@ -96,8 +96,8 @@
 }
 
 /* .readme:hover{
-  color: #a5d1e1;
-  background-color: #75c9b7;
+  color: white;
+  background-color: #00796b;
 } */
 
 .contactme {
@@ -116,8 +116,8 @@
 }
 
 .contactme:hover{
-  color: #199fb1;
-  background-color: #a5d1e1;
+  color: #5B5EA6;
+  background-color: white;
 }
 /* main body */
 
@@ -320,7 +320,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #7d52c4 repeat;
+  background: #325288 repeat;
   position: relative;
 }
 
@@ -356,7 +356,7 @@ h3 {
 }
 
 .overlay {
-  background-color: #0d5c75;
+  background-color: #325288;
   height: 100%;
   left: 0;
   position: absolute;
