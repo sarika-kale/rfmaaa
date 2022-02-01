@@ -717,6 +717,6 @@ overflow: hidden;
     bottom:0px;
 }
 .member img {
-    width:50%;
+    width:auto;
     display: block;
 }
