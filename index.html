@@ -200,7 +200,23 @@
                 the frequency of their purchases (Frequency), and the time since last purchase (Recency). Given these segments, businesses can identify which customers
                 are more important to their business, and and efficiently target them based on their behaviour patterns. 
                 This is explained further under section Data Visualization.<br /><br /><br />
-                <a class="teal-text hoverline">Dataset</a>               
+                <a class="teal-text hoverline">Dataset</a> 
+                
+                I used the <a href="https://archive.ics.uci.edu/ml/datasets/Online+Retail">Online Retail Dataset</a> from the UCI Machine Learning Respository is used to test out RFM-based customer segmentation.
+                This dataset documents the transnational transactions of 3921 unique customers, over a year, for a UK-based company.
+                After removing duplicate entries, entries with missing values, and irrevelant variables, the first 10 rows of the dataset are given below.
+                I created the TotalSales column by multiplying the Quantity by UnitPrice.
+                
+                <details>
+                  <summary>View Code</summary>
+                  {% highlight python %}
+                  import matplotlib.pyplot as plt
+                  import plotly.express as px
+                  import pandas as pd
+                  import numpy as np
+                  
+                  {% endhighlight %}
+                </details>
 
               </p>
             </ul>
