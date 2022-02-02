@@ -147,8 +147,12 @@ a {
   color: #24A19C;
 }
 
+a:link {
+  color: #24A19C;
+}
+
 a.pagelink:link {
-  color: #413C47;
+  color: #24a19c;
   text-decoration: underline;
   font-size: 70%;
 }
