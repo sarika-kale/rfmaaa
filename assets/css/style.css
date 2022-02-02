@@ -20,6 +20,10 @@
   height: auto;
 }
 
+iframe {
+  margin: 0 auto;
+}
+
 .tracker {
   /* visibility: hidden; */
   position: fixed;
