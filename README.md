@@ -1,5 +1,5 @@
 # Personal Portfolio ⚡️ 
-> This is my personal portfolio. Website template credits: https://varadbhogayata.github.io.
+> This is my personal portfolio. Website template credits: https://github.com/varadbhogayata/varadbhogayata.github.io.
 
 ### Website Preview
 <p align="center"> 
