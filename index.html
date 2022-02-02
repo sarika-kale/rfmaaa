@@ -21,9 +21,39 @@
   <!-- Custom Styles-->
   <link rel="stylesheet" href="/assets/css/style.css" />
   <title>Sarika Kale | Data Analyst</title>
-
-
   
+    <!-- Include HTMLs within HTML -->
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+    /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+    /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }      
+          xhttp.open("GET", file, true);
+          xhttp.send();
+    /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>
+
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-218997597-1"></script>
   <script>
@@ -194,7 +224,7 @@
           <div class="card-content">
             <ul>
               <p>
-                <a class="teal-text hoverline">What is RFM analysis? Why RFM for Segmentation?</a><br />
+                <a class="teal-text hoverline">What is RFM analysis? Why RFM for Segmentation?</a><br /><br />
                 
                 Recency, Frequency, and Monetary (RFM) analysis is used to represent customer behavior characteristics. 
                 RFM models have been used in direct marketing for more than 30 years. Research strongly suggests that past purchases of consumers are better predictors
@@ -219,7 +249,7 @@
                 <td>2010-01-12</td><td>3.39</td><td>17850.0</td><td>20.34</td></tr><tr><td>5</td><td>536365</td><td>2</td><td>2010-01-12</td><td>7.65</td><td>17850.0</td><td>15.3</td>
                 </tr><tr><td>6</td><td>536365</td><td>6</td><td>2010-01-12</td><td>4.25</td><td>17850.0</td><td>25.5</td></tr><tr><td>7</td><td>536366</td><td>6</td><td>2010-01-12</td><td>1.85</td>
                 <td>17850.0</td><td>11.10</td></tr><tr><td>8</td><td>536366</td><td>6</td><td>2010-01-12</td><td>1.85</td><td>17850.0</td><td>11.10</td></tr><tr><td>9</td><td>536367</td><td>32</td>
-                <td>2010-01-12</td><td>1.69</td><td>13047.0</td><td>54.08</td></tr></tbody></table>
+                <td>2010-01-12</td><td>1.69</td><td>13047.0</td><td>54.08</td></tr></tbody></table><br /><br /><br /><br />
               
               <a class="teal-text hoverline">RFM Segments</a><br /><br />
               
@@ -231,11 +261,33 @@
                 2. Frequency (F): number of purchases made within a certain period; higher frequency indicates greater loyalty
                 3. Monetary (M): the money spent during a certain period; a higher value indicates that the company should focus more on that customer
                 
-              </p>
+              </p><br /><br /><br /><br />
               
-              <style type="text/css">.tg{border-collapse:collapse;border-color:#ccc;border-spacing:0;}.tg td{background-color:#fff;border-bottom-width:1px;border-color:#ccc;border-style:solid;border-top-width:1px; border-width:0px;color:#333;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px; word-break:normal;}.tg th{background-color:#f0f0f0;border-bottom-width:1px;border-color:#ccc;border-style:solid;border-top-width:1px; border-width:0px;color:#333;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden; padding:10px 5px;word-break:normal;}.tg .tg-pli6{background-color:#969393;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}.tg .tg-191t{background-color:#FFDFBD;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}.tg .tg-6c55{background-color:#83BCD4;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}.tg .tg-8jgo{border-color:#ffffff;text-align:center;vertical-align:top}.tg .tg-jgu4{background-color:#FFC596;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}.tg .tg-4fbv{background-color:#61A9FA;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}.tg .tg-1m8t{border-color:#ffffff;font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center; vertical-align:top}.tg .tg-77xx{background-color:#8BC46C;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}.tg .tg-ir3i{background-color:#CFCBCB;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}.tg .tg-ooo4{background-color:#D16B75;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}.tg .tg-yd45{background-color:#000000;border-color:#ffffff;color:#ffffff; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;font-weight:bold;text-align:center; vertical-align:top}.tg .tg-hexm{background-color:#D1F0BD;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}.tg .tg-hjk3{background-color:#8AD0FA;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}</style><table class="tg" style="undefined;table-layout: fixed; width: 1067px"><colgroup><col style="width: 170px"><col style="width: 406px"><col style="width: 174px"><col style="width: 162px"><col style="width: 155px"></colgroup><thead> <tr> <th class="tg-yd45" colspan="2"> Segment <br></th> <th class="tg-yd45"> Recency </th> <th class="tg-yd45"> Frequency </th> <th class="tg-yd45"> Monetary </th> </tr></thead><tbody> <tr> <td class="tg-77xx" colspan="2">Champions</td><td class="tg-1m8t">Highest</td><td class="tg-1m8t">Highest</td><td class="tg-1m8t">Highest</td></tr><tr> <td class="tg-hexm" colspan="2">Loyals</td><td class="tg-1m8t">High</td><td class="tg-1m8t">Highest</td><td class="tg-1m8t">High</td></tr><tr> <td class="tg-hjk3" colspan="2">Potential Loyalists</td><td class="tg-1m8t">High</td><td class="tg-1m8t">High</td><td class="tg-1m8t">Moderate</td></tr><tr> <td class="tg-6c55" colspan="2">Promising</td><td class="tg-1m8t">Highest</td><td class="tg-1m8t">Moderate</td><td class="tg-1m8t">High</td></tr><tr> <td class="tg-4fbv" colspan="2">Needs Attention</td><td class="tg-8jgo">High</td><td class="tg-8jgo">Moderate</td><td class="tg-8jgo">High</td></tr><tr> <td class="tg-191t" colspan="2">New Customers</td><td class="tg-1m8t">Highest</td><td class="tg-1m8t">Low</td><td class="tg-1m8t">Moderate</td></tr><tr> <td class="tg-ooo4" colspan="2">Can’t Lose Them</td><td class="tg-1m8t">Lowest</td><td class="tg-1m8t">Moderate</td><td class="tg-1m8t">High</td></tr><tr> <td class="tg-jgu4" colspan="2">At Risk</td><td class="tg-1m8t">Moderate</td><td class="tg-1m8t">High</td><td class="tg-1m8t">Moderate</td></tr><tr> <td class="tg-pli6" colspan="2">Hibernating</td><td class="tg-1m8t">Moderate</td><td class="tg-1m8t">Low</td><td class="tg-1m8t">Low</td></tr><tr> <td class="tg-6c55" colspan="2">About to Sleep</td><td class="tg-1m8t">Low</td><td class="tg-1m8t">Moderate</td><td class="tg-1m8t">Low</td></tr><tr> <td class="tg-ir3i" colspan="2">Lost</td><td class="tg-1m8t">Lowest</td><td class="tg-1m8t">Lowest</td><td class="tg-1m8t">Lowest</td></tr></tbody></table>
-  
+              <style type="text/css">.tg{border-collapse:collapse;border-color:#ccc;border-spacing:0;}.tg td{background-color:#fff;border-bottom-width:1px;border-color:#ccc;border-style:solid;border-top-width:1px; border-width:0px;color:#333;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px; word-break:normal;}.tg th{background-color:#f0f0f0;border-bottom-width:1px;border-color:#ccc;border-style:solid;border-top-width:1px; border-width:0px;color:#333;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden; padding:10px 5px;word-break:normal;}.tg .tg-pli6{background-color:#969393;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}.tg .tg-191t{background-color:#FFDFBD;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}.tg .tg-6c55{background-color:#83BCD4;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}.tg .tg-8jgo{border-color:#ffffff;text-align:center;vertical-align:top}.tg .tg-jgu4{background-color:#FFC596;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}.tg .tg-4fbv{background-color:#61A9FA;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}.tg .tg-1m8t{border-color:#ffffff;font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center; vertical-align:top}.tg .tg-77xx{background-color:#8BC46C;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}.tg .tg-ir3i{background-color:#CFCBCB;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}.tg .tg-ooo4{background-color:#D16B75;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}.tg .tg-4yvv{background-color:#ffffff;border-color:#000000;color:#000000; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;font-weight:bold;text-align:center; vertical-align:middle}.tg .tg-478l{background-color:#ffffff;border-color:#000000;color:#000000; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;font-weight:bold;text-align:center; vertical-align:top}.tg .tg-hexm{background-color:#D1F0BD;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}.tg .tg-hjk3{background-color:#8AD0FA;border-color:#ffffff;color:#343434; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;text-align:center;vertical-align:top}</style><table class="tg" style="undefined;table-layout: fixed; width: 743px"><colgroup><col style="width: 170px"><col style="width: 82px"><col style="width: 174px"><col style="width: 162px"><col style="width: 155px"></colgroup><thead> <tr> <th class="tg-4yvv" colspan="2">Segment<br><br></th> <th class="tg-478l"> Recency </th> <th class="tg-478l"> Frequency </th> <th class="tg-478l"> Monetary </th> </tr></thead><tbody> <tr> <td class="tg-77xx" colspan="2">Champions</td><td class="tg-1m8t">Highest</td><td class="tg-1m8t">Highest</td><td class="tg-1m8t">Highest</td></tr><tr> <td class="tg-hexm" colspan="2">Loyals</td><td class="tg-1m8t">High</td><td class="tg-1m8t">Highest</td><td class="tg-1m8t">High</td></tr><tr> <td class="tg-hjk3" colspan="2">Potential Loyalists</td><td class="tg-1m8t">High</td><td class="tg-1m8t">High</td><td class="tg-1m8t">Moderate</td></tr><tr> <td class="tg-6c55" colspan="2">Promising</td><td class="tg-1m8t">Highest</td><td class="tg-1m8t">Moderate</td><td class="tg-1m8t">High</td></tr><tr> <td class="tg-4fbv" colspan="2">Needs Attention</td><td class="tg-8jgo">High</td><td class="tg-8jgo">Moderate</td><td class="tg-8jgo">High</td></tr><tr> <td class="tg-191t" colspan="2">New Customers</td><td class="tg-1m8t">Highest</td><td class="tg-1m8t">Low</td><td class="tg-1m8t">Moderate</td></tr><tr> <td class="tg-ooo4" colspan="2">Can’t Lose Them</td><td class="tg-1m8t">Lowest</td><td class="tg-1m8t">Moderate</td><td class="tg-1m8t">High</td></tr><tr> <td class="tg-jgu4" colspan="2">At Risk</td><td class="tg-1m8t">Moderate</td><td class="tg-1m8t">High</td><td class="tg-1m8t">Moderate</td></tr><tr> <td class="tg-pli6" colspan="2">Hibernating</td><td class="tg-1m8t">Moderate</td><td class="tg-1m8t">Low</td><td class="tg-1m8t">Low</td></tr><tr> <td class="tg-6c55" colspan="2">About to Sleep</td><td class="tg-1m8t">Low</td><td class="tg-1m8t">Moderate</td><td class="tg-1m8t">Low</td></tr><tr> <td class="tg-ir3i" colspan="2">Lost</td><td class="tg-1m8t">Lowest</td><td class="tg-1m8t">Lowest</td><td class="tg-1m8t">Lowest</td></tr></tbody></table><br /><br />
 
+              <p>
+                This tree map shows the hierarchy of RFM Segments based on Total Sales Value per segment. The tree map is as expected,
+                the largest block is assigned to "Champions" which has the most total sales, whereas the smallest block is assigned to "Lost"
+                which has the lowest total sales. 
+                
+                <div w3-include-html="figure_mean_totalsales.html"></div>
+                
+                However, we can also construct the map on the basis of Average Order Value, this reveals a different story. 
+                The largest block is the "Can't Lose Them", which has the highest Average Order Value of all the segments. These are customers who spend heavily,
+                with moderate frequency, but have not done so recently. Having identified this segment, businesses can try to win them back, 
+                with high priority, via renewals or newer products. Customers should also be interviewed to identify why they left. The "At Risk" Segment
+                is similar to "Can't Lose Them" but with spend relatively lesser. This segment can be tended to next.
+              
+              
+                <div w3-include-html="figure_mean_aov.html"></div>
+              
+                Another key segment is "Loyal", a segment that has fairly high total sales and average order value. Given their brand loyalty,
+                businesses can upsell higher value products to this segment. In contrast, for the segment "Lost" businesses can try to reach them out with general,
+                low-cost campaigns, otherwise ignore them.
+                
+                Overall, identifying RFM Segments can help businesses prioritise which consumers to target, and how to best target them based on their purchasing behaviour.
+                
+              </p>
             </ul>
           </div>
         </div>
@@ -306,6 +358,13 @@
       })
     })
   </script>
+  
+  
+  <!-- Include HTMLs within HTML-->  
+  <script>
+    includeHTML();
+  </script>
+  
 </body>
 
 </html>
